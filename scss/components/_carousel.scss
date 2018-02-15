@@ -1,0 +1,95 @@
+.gallery-carousel {
+  position: relative;
+  padding: 0;
+
+  .slick-arrow {
+    @include fa-icon();
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+
+    &::before {
+      font-size: 4rem;
+      line-height: 1;
+      opacity: .90;
+      color: $white;
+      -webkit-font-smoothing: antialiased;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &.slick-prev {
+      left: 20px;
+
+      &:hover {
+        text-shadow: 3px 0 0 $primary;
+      }
+
+      &::before {
+        content: $fa-var-angle-left;
+      }
+    }
+
+    &.slick-next {
+      right: 20px;
+
+      &:hover {
+        text-shadow: -3px 0 0 $primary;
+      }
+
+      &::before {
+        content: $fa-var-angle-right;
+      }
+    }
+  }
+
+  &.arrows-dark {
+    .slick-arrow {
+      &::before {
+        color: $primary;
+      }
+    }
+  }
+
+  &.arrows-outside {
+    .slick-arrow {
+      &.slick-prev {
+        left: -40px;
+        text-shadow: none;
+
+        @include media-breakpoint-up(lg) {
+          left: -50px;
+        }
+      }
+
+      &.slick-next {
+        right: -40px;
+        text-shadow: none;
+
+        @include media-breakpoint-up(lg) {
+          right: -50px;
+        }
+      }
+    }
+  }
+
+
+  &.slick-initialized {
+    .slick-slide {
+      &.label-item {
+        display: flex;
+      }
+    }
+  }
+}

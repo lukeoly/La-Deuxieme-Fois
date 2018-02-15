@@ -1,0 +1,25 @@
+/* ----------------------------- */
+/* La Deuxieme Fois styling      */
+/* Done by @lukeoly - 2 Feb 2018 */
+/* ----------------------------- */
+
+// Fonts
+@import '//fonts.googleapis.com/css?family=Open+Sans:700,800|Pinyon+Script|Playfair+Display:400,700';
+$fa-font-path: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+@import '../node_modules/slick-carousel/slick/slick.scss';
+
+
+// Bootstrap 4
+@import 'base/bootstrap-variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import 'base/utilities';
+
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/intro-header';
+@import 'components/labels';
+@import 'components/footer';
