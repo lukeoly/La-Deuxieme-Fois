@@ -42,7 +42,8 @@ gulp.task('copyJS', function() {
      './node_modules/popper.js/src/popper.min.js',
      './node_modules/bootstrap/dist/js/bootstrap.min.js',
      './node_modules/slick-carousel/slick/slick.min.js',
-     './js/slick.init.js'
+     './js/slick.init.js',
+     './js/smooth-scroll.js',
    ])
    .pipe(concat('scripts.js'))
    .pipe(uglify())

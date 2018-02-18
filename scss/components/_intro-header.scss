@@ -26,11 +26,17 @@ section.intro {
   margin-top: 40px;
   font-size: 3rem;
   font-family: 'Pinyon Script', $font-family-serif;
+  font-weight: 400;
   color: $white;
 
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
   .fa-circle {
     font-size: 100px;
   }
+
 }
 
 .menu {
@@ -47,5 +53,9 @@ section.intro {
     font-family: $font-family-sans-serif;
     font-size: 22px;
     text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
