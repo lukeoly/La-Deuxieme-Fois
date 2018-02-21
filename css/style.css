@@ -8297,6 +8297,9 @@ hr {
   margin-left: auto;
   margin-right: auto; }
 
+.bg-primary a {
+  color: #fff; }
+
 /* --------------------------- */
 /* Buttons styling             */
 /* --------------------------- */
@@ -8315,6 +8318,7 @@ hr {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -8327,6 +8331,9 @@ hr {
     background: transparent;
     cursor: pointer;
     transition: .2s all ease-in-out; }
+    @media (min-width: 768px) {
+      .gallery-carousel .slick-arrow {
+        display: block; } }
     .gallery-carousel .slick-arrow::before {
       font-size: 4rem;
       line-height: 1;
