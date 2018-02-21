@@ -8370,6 +8370,9 @@ hr {
         right: -50px; } }
   .gallery-carousel.slick-initialized .slick-slide.label-item {
     display: flex; }
+  .gallery-carousel picture.slick-slide {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff; }
 
 /* --------------------------- */
 /* Intro/Header styling        */
