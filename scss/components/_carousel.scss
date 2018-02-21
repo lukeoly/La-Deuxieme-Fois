@@ -4,6 +4,7 @@
 
   .slick-arrow {
     @include fa-icon();
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -16,6 +17,11 @@
     background: transparent;
     cursor: pointer;
     transition: .2s all ease-in-out;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+
 
     &::before {
       font-size: 4rem;
