@@ -1,0 +1,2 @@
+# Ignore front-end devDependencies
+node_modules
